@@ -21,13 +21,13 @@ h2 {
 }
 
 .container {
-  display: flex;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .about-us {
+  display: flex;
   width: 60%;
   padding: 10px;
 }
@@ -54,6 +54,11 @@ h2 {
   padding: 10px;
   font-size: 12px;
   letter-spacing: 2px;
+  border: none;
+}
+
+.flex {
+  display: flex;
 }
 
 .btn-read-more {
@@ -71,7 +76,15 @@ h2 {
 .header-init {
   background-image: url(./img/banner.jpg);
   background-size: cover;
-  height: 300px;
+  height: 350px;
+  color: white;
+  text-align: center;
+}
+
+.header-contact {
+  background-color: black;
+  background-size: cover;
+  height: 80px;
   color: white;
   text-align: center;
 }
@@ -112,4 +125,84 @@ footer {
 .blog-container {
   width: 70%;
   padding: 20px;
+}
+
+.form-c {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  margin-top: -50px;
+}
+
+label {
+  display: inline-block;
+  margin: 10px 0 5px 0;
+  font-weight: bold;
+  color: #555555;
+  width: 20%;
+}
+
+div.input-container {
+  display: flex;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 50px;
+  resize: none;
+}
+
+.money {
+  color: green;
+}
+
+.btn-more,
+.btn-unavailable {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+}
+
+.btn-more {
+  background-color: orange;
+}
+.btn-unavailable {
+  background-color: gray;
+  line-height: normal;
+}
+
+.cour-item {
+  background-color: #f7f6f6;
+  margin: 6px;
+  border: 2px solid rgb(211, 210, 210);
+}
+
+.cour-item-text {
+  padding: 20px;
+}
+
+.cour-item h2 {
+  text-align: left;
+}
+
+.cour-container {
+  display: flex;
 }
